@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Notas Finales</title>
+    <link rel="stylesheet" href="style.css"> <!-- Enlace al archivo de estilo CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Notas Finales</h1>
+        <form id="nota-form">
+            <label for="examen-final">Nota del Examen Final (0-10): </label>
+            <input type="number" id="examen-final" step="0.1" required>
+            
+            <label for="leccion-general">Nota de la Lección General (0-10): </label>
+            <input type="number" id="leccion-general" step="0.1" required>
+            
+            <label for="prueba-salida">Nota de la Prueba de Salida (0-10): </label>
+            <input type="number" id="prueba-salida" step="0.1" required>
+            
+            <label for="control-lectura">Nota del Control de Lectura (0-10): </label>
+            <input type="number" id="control-lectura" step="0.1" required>
+            
+            <label for="taller-grupal">Nota del Taller Grupal (0-10): </label>
+            <input type="number" id="taller-grupal" step="0.1" required>
+            
+            <label for="tareas">Nota de las Tareas (0-10): </label>
+            <input type="number" id="tareas" step="0.1" required>
+            
+            <label for="mejoramiento">¿Hay nota de Mejoramiento? (sí/no): </label>
+            <input type="text" id="mejoramiento" required>
+            
+            <button type="submit">Calcular Nota Final</button>
+        </form>
+
+        <div id="resultado" class="resultado">
+            <h2>Resultado:</h2>
+            <p id="nota-final-text">La nota final es: <span id="nota-final"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Enlace al archivo JavaScript -->
+</body>
+</html>
